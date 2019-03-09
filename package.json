@@ -6,11 +6,16 @@
   "scripts": {
     "start": "budo demo/demo.js:bundle.js --title $npm_package_name --force-default-index --open --live --ssl",
     "build": "browserify --full-paths demo/demo.js > bundle.js",
+    "update": "browserify src/snippet.js > script.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "budo": "^11.6.1"
+    "budo": "^11.6.1",
+    "ipfs-mini": "^1.1.5"
+  },
+  "devDependencies": {
+    "play-workshop": "^0.1.3"
   }
 }

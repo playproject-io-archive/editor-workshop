@@ -1,0 +1,210 @@
+{
+  "title": "SOLIDITY",
+  "version": "1.0.0",
+  "icon": "./assets/logo.svg",
+  "chat": "https://gitter.im/wizardamigosinstitute/program/~embed",
+  "lessons": [{
+    "title": "The basics",
+    "lesson": "https://www.youtube.com/embed/v_hU0jPtLto",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Solidity is an object-oriented, high-level language for implementing ",
+      "smart contracts. Smart contracts are programs which govern the behaviour ",
+      "of accounts within the Ethereum state. Solidity was influenced by C++, ",
+      "Python and JavaScript and is designed to target the Ethereum Virtual ",
+      "Machine (EVM). It is statically typed, supports inheritance, libraries ",
+      "and complex user-defined types among other features. With Solidity you ",
+      "can create contracts for uses such as voting, crowdfunding, blind ",
+      "auctions and multi-signature wallets."
+    ]
+  },{
+    "title": "Inheritance",
+    "lesson": "https://www.youtube.com/embed/6hkmLOtIq8A",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Solidity supports multiple inheritance by copying code including polymorphism. ",
+      "All function calls are virtual, which means that the most derived function is ",
+      "called, except when the contract name is explicitly given. When a contract ",
+      "inherits from multiple contracts, only a single contract is created on the ",
+      "blockchain, and the code from all the base contracts is copied into the created ",
+      "contract. The general inheritance system is very similar to Python’s, especially ",
+      "concerning multiple inheritance. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.4.21/contracts.html#inheritance))"
+    ]
+  },{
+    "title": "Custom Modifiers and Error Handling",
+    "lesson": "https://www.youtube.com/embed/3ObTNzDM3wI",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Modifiers can be used to easily change the behaviour of functions. ",
+      "For example, they can automatically check a condition prior to executing ",
+      "the function. Modifiers are inheritable properties of contracts and may ",
+      "be overridden by derived contracts. ",
+      "(read more about [modifiers](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#function-modifiers), ",
+      "[error handling](https://solidity.readthedocs.io/en/v0.5.0/units-and-global-variables.html?highlight=error%20))"
+    ]
+  },{
+    "title": "Imports and Libraries",
+    "lesson": "https://www.youtube.com/embed/0Lyf_3kA3Ms",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Solidity supports import statements that are very similar to those ",
+      "available in JavaScript (from ES6 on), although Solidity does not know ",
+      "the concept of a “default export. Import statements should always be ",
+      "placed at the top of the file. ",
+      "Libraries are similar to contracts, but their purpose is that they ",
+      "are deployed only once at a specific address and their code is reused ",
+      "using the _delegatecall_ feature of the EVM. ",
+      "(read more about [importing](https://solidity.readthedocs.io/en/v0.5.0/layout-of-source-files.html#importing-other-source-files), ",
+      "[libraries](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#libraries))"
+    ]
+  },{
+    "title": "Event logging and Transaction Information",
+    "lesson": "https://www.youtube.com/embed/Jlq997yOoRs",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Events are inheritable members of contracts. When you call them, ",
+      "they cause the arguments to be stored in the transaction’s log ",
+      "- a special data structure in the blockchain. ",
+      "Solidity events give an abstraction on top of the EVM’s logging ",
+      "functionality. Applications can subscribe and listen to these events ",
+      "the RPC interface of an Ethereum client. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#events))"
+    ]
+  },{
+    "title": "Data Types (Array, Mapping, Struct)",
+    "lesson": "https://www.youtube.com/embed/8UhO3IKApSg",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Solidity is a statically typed language, which means that the type of each ",
+      "variable (state and local) needs to be specified. Solidity provides ",
+      "several elementary types which can be combined to form complex types. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/types.html))"
+    ]
+  },{
+    "title": "Extending String Functionality and Bytes",
+    "lesson": "https://www.youtube.com/embed/6iiWwT0O2fY",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "They do not imply trailing zeroes as in C; foo represents three bytes, ",
+      "String literals are written with either double or single-quotes. ",
+      "not four. As with integer literals, their type can vary, but they",
+      "are implicitly convertible to bytes1, …, bytes32, if they fit, ",
+      "to bytes and to string. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/types.html#string-literals))"
+    ]
+  },{
+    "title": "Functional Assembly",
+    "lesson": "https://www.youtube.com/embed/nkGN6GwkMzU",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Solidity defines an assembly language that you can use without Solidity ",
+      "and also as inline assembly inside Solidity source ",
+      "code. This guide starts with describing how to use inline assembly, ",
+      "how it differs from standalone assembly, and specifies assembly itself. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/assembly.html))"
+    ]
+  },{
+    "title": "Instructional Assembly",
+    "lesson": "https://www.youtube.com/embed/axZJ2NFMH5Q",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Assembly parses comments, literals and identifiers in the same way as ",
+      "Solidity, so you can use the usual // and /* */ comments. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/assembly.html#syntax))"
+    ]
+  },{
+    "title": "Public vs External",
+    "lesson": "https://www.youtube.com/embed/Ii4g38mPPlg",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Since Solidity knows two kinds of function calls (internal ones that ",
+      "do not create an actual EVM call (also called a message call) ",
+      "and external ones that do), there are four types of visibilities for ",
+      "functions and state variables. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#visibility-and-getters))"
+    ]
+  },{
+    "title": "Time Based Events",
+    "lesson": "https://www.youtube.com/embed/HGw-yalqdgs",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "There is only two ways how you can implement time based events: through ",
+      "the blocks/block time or simply by using a trigger mechanism from an ",
+      "external source",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#additional-resources-for-understanding-events))"
+    ]
+  },{
+    "title": "Polymorphism",
+    "lesson": "https://www.youtube.com/embed/l_E5F5qnbtk",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Polymorphism is a feature of many programming languages which is ",
+      "some inherited functions to specialize their behavior. Let's see ",
+      "closely related to inheritance. It allows a child class to redefine ",
+      "how polymorphism work in Solidity with contracts. ",
+      "([read more](https://www.packtpub.com/mapt/book/application_development/9781788831383/6/ch06lvl1sec74/polymorphism))"
+    ]
+  },{
+    "title": "Randomness and Gambling",
+    "lesson": "https://www.youtube.com/embed/3wY5PRliphE",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Everything you use in a smart contract is publicly visible, even local ",
+      "variables and state variables marked private. Using random numbers in ",
+      "smart contracts is quite tricky if you do not want miners to be able ",
+      "to cheat. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/security-considerations.html#security-considerations))"
+    ]
+  },{
+    "title": "Nested Arrays and Storage",
+    "lesson": "https://www.youtube.com/embed/zkNHRJEuYQg",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Statically-sized variables (everything except mapping and ",
+      "dynamically-sized array types) are laid out contiguously in storage ",
+      "starting from position 0. Multiple items that need less than 32 bytes ",
+      "are packed into a single storage slot if possible.",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/miscellaneous.html#layout-of-state-variables-in-storage))"
+    ]
+  },{
+    "title": "Parameter Mapping and Multiple Return Values",
+    "lesson": "https://www.youtube.com/embed/v3aoiTh-UVQ",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "As in Javascript, functions may take parameters as input; unlike in ",
+      "Javascript and C, they may also return arbitrary number of parameters ",
+      "as output.",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/control-structures.html))"
+    ]
+  },{
+    "title": "State Modifiers (view, pure, constant)",
+    "lesson": "https://www.youtube.com/embed/RKos31UueqY",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "State variables can be declared as constant. In this case, they have ",
+      "to be assigned from an expression which is a constant at compile time. ",
+      "Any expression that accesses storage, blockchain data (e.g. now, ",
+      "address(this).balance or block.number) or execution data (msg.value or ",
+      "gasleft()) or makes calls to external contracts is disallowed.",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/contracts.html#constant-state-variables))"
+    ]
+  },{
+    "title": "Auditing, Security and Testing",
+    "lesson": "https://www.youtube.com/embed/LGCMZ7S_ITE",
+    "tool": "https://ethereum-play.github.io/play-editor/",
+    "info": [
+      "Since software is written by humans, it can have bugs. Thus, also smart ",
+      "contracts should be created following well-known best-practices in ",
+      "software development. This includes code review, testing, audits and ",
+      "correctness proofs. ",
+      "([read more](https://solidity.readthedocs.io/en/v0.5.0/security-considerations.html#security-considerations))"
+    ]
+  }],
+  "needs": [
+    "https://foobar.com"
+  ],
+  "unlocks": [
+    "https://google.com"
+  ]
+}
